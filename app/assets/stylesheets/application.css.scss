@@ -1,0 +1,356 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+body {
+  background-color: #efefef;
+  height: 100%;
+  
+}
+
+// Typography Styles
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Background Gradient
+.navbar, .home-callout {
+  background-color: #33a3b7;
+  border:none;
+  padding-bottom: 30px;
+}
+
+// Lining up the content top-margin
+.home-container {
+  margin-top: -20px;
+}
+
+
+
+
+
+// NAV STYLES 
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  margin-top: 30px;
+}
+
+
+// Positioning the RTDDS Logo
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-top: 15px;
+}
+
+// Styling the navbar links and hover
+.navbar-default .navbar-brand, .navbar-default .navbar-text,
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Pacifico';
+  color: white;
+  &:hover {
+    color: #87D7FF;
+    opacity:0.75;
+  }
+}
+
+// Targeting the links without the <p>
+.navbar-nav > li > a {
+  font-size: 24px;
+}
+
+// Re-sizing the motto & centering
+.tutor-motto {
+  font-size: 18px;
+  padding-left: 35px;
+}
+
+// Re-sizing the main Logo & backup fonts
+.navbar-brand {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+}
+
+
+// END NAV STYLES
+
+
+
+
+
+
+// BEGIN BODY STYLES
+
+// Jumbo-Pic for the intro to body - need to learn best practice
+.jumbotron {
+  background-image: url('http://a.abcnews.com/images/Business/gty_open_plan_office_ll_130701_16x9_992.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  color: white;
+  background-color: #373D3F;
+  height: 1150px;
+  min-height: 1000px;
+}
+
+// Keeps the jumbotron full width & height
+// should it be container not container-fluid? 
+.container-fluid {
+  padding: 0px;
+}
+
+// You'll love me headline
+// margin-top to keep at the nav line
+.home-info-headline {
+  margin-top: -30px;
+  padding: 40px;
+  color: #33a3b7;
+}
+
+// You'll love me styles
+.home-info-headline p {
+  font-size: 18px;
+}
+
+// The seductive dentist beginning wrap
+section.home-about-wrap .placeholder-photo {
+  background: url('http://www.middlemarketcenter.org/Media/Expert%20Perspectives%20Images/successfulbusinessteamwi_88818.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+
+
+// RyanTutorDDS Under The Syductive Pic
+section.home-about-wrap .about-col .cd_tutor_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-weight: 200;
+  padding-top: 20px;
+  font-size: 25px;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0;
+}
+
+// The Tooth Wizard Text Blocks
+section.home-about-wrap .about-copys {
+  color: #33a3b7;
+  display: inline-block;
+  padding: 30px; 
+  font-size: 16px;
+}
+
+// END BODY STYLES
+
+
+
+
+// BEGIN FOOTER STYLES
+// Still not how I want it- I'd like it to be absolutely in the bottom regardless
+// of what content is on the page, but this will work for now
+
+footer {
+  position: relative; 
+}
+
+.footer {
+  padding-top: 30px;
+}
+
+.footer a {
+  color: white;
+  font-family: 'Pacifico';
+  text-decoration: none;
+  &:hover {
+    color: #87d7FF;
+    opacity: 0.75;
+  }
+}
+
+.footerheading {
+  letter-spacing: .12em;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.footer .footerheading {
+  font-family: 'Pacifico';
+  color:white;
+}
+
+.footer-content {
+  padding: 35px 35px 0 35px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: .022em;
+  background-color: #33a3b7;
+}
+
+// Contact logo too close to the <header>
+.fa {
+  padding-right:8px;
+}
+
+
+// END FOOTER STYLES
+
+
+
+
+// BEGIN CONTACT PAGE STYLES
+
+.contact-header {
+  color: white;
+}
+
+.templatecontent .row {
+  font-size: 16px;
+  letter-spacing: .030em;
+  color: #33a3b7;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.templatecontent .row ul {
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+// END CONTACT PAGE STYLES
+
+
+
+
+
+
+// SERVICES STYLES
+
+// Keeps the sections the same size
+section.main-services .col-sm-6 {
+  max-height: 500px;
+  min-height: 500px!important;
+}
+
+// Coloring & Styling The Written Sections
+section.main-services ul {
+  color: #33a3b7;
+  list-style-type: none;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+
+.default-head-content h4 {
+  font-size: 24px;
+}
+
+section.main-services h3 {
+  font-family: 'Pacifico';
+  color: #33a3b7;
+  font-size: 34px;
+  font-weight: 300;
+  padding-bottom: 35px;
+  padding-top: 15px;
+}
+
+.services-first-row-img, .services-second-row-img, .services-third-row-img, 
+.services-fourth-row-img {
+  background-size: cover;
+  background-position: center;
+}
+
+// Pictures That Aren't Uploaded
+.services-first-row-img {
+  background-image: url('http://www.dentalrepublic.com/images/traditional-braces.jpg');
+}
+
+.services-second-row-img {
+  background-image: url('http://i.imgur.com/5lue95J.jpg');
+}
+
+.services-third-row-img {
+  background-image: url('http://i.imgur.com/DMhkIyY.jpg');
+}
+
+.services-fourth-row-img {
+  background-image: url('http://i.imgur.com/5bMO1Uy.jpg');
+}
+
+
+
+
+
+
+// BEGIN GALLERY STYLES
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Keeps the picture container always max width whether there are one or two pictures
+.ui-widget.ui-widget-content {
+  width: 100%;
+  text-align: center;
+}
+
+// Aligning the UI TABS * REALLY IMPORTANT
+.ui-tabs .ui-tabs-nav {
+    text-align: center;
+    font-size: 16px;
+}
+
+// Aligning the UI TABS * REALLY IMPORTANT
+.ui-tabs .ui-tabs-nav li {
+    float: none !important;
+    display: inline-block;
+}
+
+
+// Setting the img's to same width & height
+.ui-gallery-img {
+  height: 400;
+  width: 600;
+}
+
+
+
+
+// Multiple Pages Use This
+
+// Header For Each Page
+.default-head-content {
+  color: #33a3b7;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  margin-top: -30px;
+  background-color: white;
+}
