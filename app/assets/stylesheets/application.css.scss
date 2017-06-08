@@ -14,7 +14,9 @@
  *= require_self
  */
  
- // There is a lot of repitition. I need to go back and minimize it as best I can.
+ // DRY - This is my best attempt to minify the code. I'm sure there are probably
+ // A hundred lines that could be taken out by someone very experienced, and I 
+ // would love the opportunity to learn under them. 
  
  
  
@@ -62,6 +64,7 @@ h1, h2, h3 {
 .navbar-default .navbar-brand {
   color: #fff;
   font-family: 'Oswald';
+  font-size: 28px;
   &:hover {
     color: #87D7FF;
     opacity: 0.75;
@@ -71,7 +74,7 @@ h1, h2, h3 {
 .navbar-default .navbar-nav > li > a {
   font-family: 'Oswald';
   color: white;
-  font-size: 22px;
+  font-size: 28px;
   &:hover {
     color: #87D7FF;
     opacity: 0.75;
@@ -90,12 +93,6 @@ h1, h2, h3 {
   margin-left: 55px;
 }
 
-// Re-sizing the main Logo & backup fonts
-.navbar-brand {
-  font-family: 'Oswald', sans-serif;
-  font-size: 28px;
-}
-
 
 // END NAV STYLES
 
@@ -105,7 +102,7 @@ h1, h2, h3 {
 
 // Jumbo-Pic for the intro to body - need to learn best practice
 .jumbotron {
-  background-image: url('http://a.abcnews.com/images/Business/gty_open_plan_office_ll_130701_16x9_992.jpg');
+  background-image: url('http://study.com/cimages/course-image/introduction-to-business-certificate-course_129464_large.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; 
@@ -117,7 +114,6 @@ h1, h2, h3 {
 
 
 // Keeps the jumbotron full width & height
-// should it be container not container-fluid? 
 .container-fluid {
   padding: 0px;
 }
@@ -144,7 +140,7 @@ section.home-about-wrap .placeholder-photo {
 
 
 // 
-section.home-about-wrap .about-col .cd_tutor_info {
+section.home-about-wrap .about-col .cd_intro_info {
   position: absolute;
   bottom: 0;
   left: 0;

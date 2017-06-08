@@ -43,7 +43,7 @@
         <div class="row">
          <ul class="nav navbar-nav navbar-right nav-bar-links">
           <li><%= link_to "Home", root_path %> </li>
-          <li><%= link_to "Service", "/services" %></li>
+          <li><%= link_to "Services", "/services" %></li>
           <li><%= link_to "Gallery", "/gallery" %></li>
           <li><%= link_to "About", "/about" %></li>
           <li><%= link_to "Contact Us", "/contacts/new" %></li>
@@ -56,6 +56,8 @@
     
 <%= yield %>
 <!-- JS I used to get the gallery up and working --> 
+<!-- I tried placing this in the application.js folder instead of here,
+<!-- but nothing ended up working. Couldn't figure it out so just let it stay for now -->
     <script>
       $( '#tab-container').tabs();
       $( '#a' ).tabs();
@@ -98,7 +100,7 @@
                  <br/>
                  <a href="#">
                    <i class="fa fa-envelope"></i>
-                     Send An Email
+                     Send An Email - 
                      AHoytDeveloper@gmail.com
                  </a>
                  <br/>
